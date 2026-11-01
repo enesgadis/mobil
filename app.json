@@ -1,20 +1,26 @@
 {
   "expo": {
-    "name": "devprimer",
-    "slug": "devprimer",
+    "name": "DevPrimer",
+    "slug": "devprimer-visionux",
     "version": "1.0.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "supportsTablet": true
-    },
+    "userInterfaceStyle": "dark",
     "android": {
+      "package": "com.enes.devprimer",
       "adaptiveIcon": {
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#070f1e"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
-    "web": {
-      "bundler": "metro"
-    }
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Bilgisayarlı görü ve jest takibi için kamera erişimi gereklidir."
+        }
+      ]
+    ]
   }
 }
